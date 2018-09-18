@@ -10,8 +10,8 @@ import os
 from hashlib import md5
 from multiprocessing import Pool
 
-#content=False为了解决多进程的警告
-conn = pymongo.MongoClient(MONGO_URL,content=False)
+#connect=False为了解决多进程的警告
+conn = pymongo.MongoClient(MONGO_URL,connect=False)
 db = conn[MONGO_DB]
 
 
